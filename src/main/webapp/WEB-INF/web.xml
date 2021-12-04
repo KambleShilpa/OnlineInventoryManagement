@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://Java.sun.com/xml/ns/j2ee"
+	xmlns:web="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd http://java.sun.com/xml/ns/javaee 
+http://xmlns.jcp.org/xml/ns/javaee"
+	id="WebApp_ID" version="2.4">
+	<servlet>
+		<servlet-name>LoginProcessing</servlet-name>
+		<servlet-class>com.processing.LoginProcessing</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginProcessing</servlet-name>
+		<url-pattern>/LoginProcessing</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AddProcessing</servlet-name>
+		<servlet-class>com.processing.processAddBook</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddProcessing</servlet-name>
+		<url-pattern>/processAddBook</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>EditProcessing</servlet-name>
+		<servlet-class>com.processing.processEditBook</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EditProcessing</servlet-name>
+		<url-pattern>/processEditBook</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>Register</servlet-name>
+		<servlet-class>com.processing.RegisterationProcessing</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Register</servlet-name>
+		<url-pattern>/RegisterationProcessing</url-pattern>
+	</servlet-mapping>
+</web-app>
